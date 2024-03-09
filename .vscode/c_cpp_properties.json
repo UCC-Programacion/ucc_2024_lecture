@@ -1,0 +1,9 @@
+{
+  "configurations": [
+    {
+      "name": "myconfig",
+      "cppStandard": "c++20"
+    }
+  ],
+  "version": 4
+}

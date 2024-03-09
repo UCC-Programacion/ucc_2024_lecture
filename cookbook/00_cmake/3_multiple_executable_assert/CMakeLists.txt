@@ -1,0 +1,2 @@
+add_executable(cookbook_00_3_multiple_executable_assert main.cpp mymath.cpp)
+add_executable(cookbook_00_3_multiple_executable_assert_test main_test.cpp mymath.cpp)

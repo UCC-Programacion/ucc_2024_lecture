@@ -1,0 +1,2 @@
+add_executable(cookbook_00_2_multiple_executable_1 main.cpp mymath.cpp)
+add_executable(cookbook_00_2_multiple_executable_2 main_other.cpp mymath.cpp)

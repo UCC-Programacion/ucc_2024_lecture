@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C++: g++ build active folder",
+      "command": "g++",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "-std=c++20",
+        "-Wall",
+        "-Wextra",
+        "-pedantic",
+        "*.cpp",
+        "-o",
+        "${fileDirname}/build/main"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": "build",
+      "detail": "Custom Task to build active folder."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+add_subdirectory(0_single_file)
+add_subdirectory(1_multiple_files)
+add_subdirectory(2_multiple_executable)
+add_subdirectory(3_multiple_executable_assert)

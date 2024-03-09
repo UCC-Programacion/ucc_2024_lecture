@@ -1,0 +1,1 @@
+add_executable(cookbook_00_1_multiple_files main.cpp mymath.cpp)

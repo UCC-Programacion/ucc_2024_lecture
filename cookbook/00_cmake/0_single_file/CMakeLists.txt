@@ -1,0 +1,1 @@
+add_executable(cookbook_00_0_single_file main.cpp)
