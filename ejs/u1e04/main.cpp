@@ -16,8 +16,18 @@ int factorial(int n)
   return n * factorial(n - 1);
 }
 
+int factorial_for(int n)
+{
+  assert(n >= 0);
+  int out = 1;
+  for (int i = 1; i <= n; ++i) {
+    out = out * i;
+  }
+  return out;
+}
+
 int main()
 {
   std::cout << "factorial(3) = " << factorial(3) << std::endl;
-  std::cout << "factorial(-1) = " << factorial(-1) << std::endl;
+  std::cout << "factorial(3) = " << factorial_for(3) << std::endl;
 }
