@@ -3,6 +3,8 @@
 // copied from
 // https://www.learncpp.com/cpp-tutorial/generating-random-numbers-using-mersenne-twister/
 
+// For reference https://hackingcpp.com/cpp/std/random.html
+
 #include <chrono>
 #include <random>
 
