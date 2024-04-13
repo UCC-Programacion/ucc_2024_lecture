@@ -69,7 +69,7 @@ int main()
   std::cout << "> reading text.txt by line to a vector" << std::endl;
   std::vector<std::string> lines = read_file_lines("text.txt");
   std::cout << "line count: " << lines.size() << std::endl;
-  for (std::string line : lines) {
+  for (const std::string& line : lines) {
     std::cout << line << std::endl;
   }
 
