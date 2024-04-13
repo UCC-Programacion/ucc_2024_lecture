@@ -11,10 +11,10 @@ Contenido de las carpetas
   Cada ejercicios tiene su carpeta y se denota con la unidad y el numero del ejercicio.
   Por ejemplo, `u2e05` corresponde al ejercicio 5 de la unidad 2.
 - `cookbook/`, recetas y ejemplos de codigo
-  - `00_cmake/`, codigo de referencia para construir ejecutables de 1 archivo,
-    multiples archivos y automatizar pruebas con [`cmake`](https://cmake.org/).
-  - `00_make/`, codigo de referencia para construir ejecutables de 1 archivo
-    y multiples archivos con [`make`](https://www.gnu.org/software/make/manual/make.html).
+    - `00_cmake/`, codigo de referencia para construir ejecutables de 1 archivo,
+      multiples archivos y automatizar pruebas con [`cmake`](https://cmake.org/).
+    - `00_make/`, codigo de referencia para construir ejecutables de 1 archivo
+      y multiples archivos con [`make`](https://www.gnu.org/software/make/manual/make.html).
 
 Otras carpetas de configuracion
 
@@ -108,6 +108,7 @@ add_subdirectory(u5)
 Videos
 
 - [C++ by The Cherno](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
+- [Full C++17 Course by Code for yourself](https://youtube.com/playlist?list=PLwhKb0RIaIS1sJkejUmWj-0lk7v_xgCuT&si=NkA2yJRRr0fmyoDC)
 - [C++ Tutorials by Portfolio Courses](https://www.youtube.com/playlist?list=PLA1FTfKBAEX6BdpNaWp2uw-YspHwY7qwW)
 - [Configurar CLion en Windows](https://www.jetbrains.com/help/clion/quick-tutorial-on-configuring-clion-on-windows.html) ([Youtube](https://www.youtube.com/watch?v=Vj06cfj6LyI))
 - [Configurar CLion en macOS](https://www.jetbrains.com/help/clion/quick-tutorial-on-configuring-clion-on-macos.html)
@@ -123,4 +124,5 @@ IDEs
 
 - [CLion](https://www.jetbrains.com/clion/) que se puede usar con una
   [licencia educativa](https://www.jetbrains.com/community/education/#students/)
-- [VSCode](https://code.visualstudio.com/) con videos para configurar [C++](https://code.visualstudio.com/docs/cpp/introvideos-cpp)
+- [VSCode](https://code.visualstudio.com/) con videos para
+  configurar [C++](https://code.visualstudio.com/docs/cpp/introvideos-cpp)
