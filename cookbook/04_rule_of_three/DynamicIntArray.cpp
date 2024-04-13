@@ -77,7 +77,7 @@ int DynamicIntArray::operator[](int index) const
   return m_data[index];
 }
 
-std::size_t DynamicIntArray::get_size() { return m_size; }
+std::size_t DynamicIntArray::get_size() const { return m_size; }
 
 std::ostream& operator<<(std::ostream& os,
   const DynamicIntArray& dynamic_int_list)
@@ -86,7 +86,7 @@ std::ostream& operator<<(std::ostream& os,
   for (int i = 0; i < dynamic_int_list.m_size; ++i) {
     std::cout << " " << dynamic_int_list.m_data[i];
   }
-  std::cout << "]";
+  std::cout << " ]";
 
   return os;
 }

@@ -27,7 +27,7 @@ public:
   int& operator[](int index);
   int operator[](int index) const;
 
-  std::size_t get_size();
+  std::size_t get_size() const;
 
   friend std::ostream& operator<<(std::ostream& os, const DynamicIntArray&);
 };
