@@ -1,39 +1,38 @@
+#include "SmartDynamicIntArray.h"
 #include <iostream>
-#include <memory>
-
-class Dummy {
-public:
-  Dummy() { std::cout << "Dummy constructor" << std::endl; }
-  ~Dummy() { std::cout << "Dummy destructor" << std::endl; }
-
-  void method() { std::cout << "Dummy::method()" << std::endl; }
-};
 
 int main()
 {
-
-  std::cout << "start unique_ptr" << std::endl;
-  {
-    std::unique_ptr<Dummy> u_ptr = std::make_unique<Dummy>();
-    // auto d_ptr = std::make_unique<Dummy>();
-    u_ptr->method();
-
-    // The following line will cause a compile error, since unique_ptr
-    // cannot be copied or assigned.
-    // std::unique_ptr<Dummy> u_ptr2 = u_ptr;
+  using cookbook::SmartDynamicIntArray;
+  
+  SmartDynamicIntArray a { 5 };
+  for (int i = 0; i < a.size(); ++i) {
+    a[i] = i;
   }
-  std::cout << "end unique_ptr" << std::endl;
 
-  std::cout << "start shared_ptr" << std::endl;
+  std::cout << "a = " << a << "\n";
+
   {
-    // shared_ptr can be copied and assigned, and will automatically
-    // deallocate the object when all copies are destroyed.
-    std::shared_ptr<Dummy> s_ptr1 = std::make_shared<Dummy>();
-    std::shared_ptr<Dummy> s_ptr2 = s_ptr1;
-    s_ptr1->method();
-    s_ptr2->method();
+    SmartDynamicIntArray b = a;
+    b[0] = 10;
+    std::cout << "a = " << a << "\n";
+    std::cout << "b = " << b << "\n";
   }
-  std::cout << "end shared_ptr" << std::endl;
+
+  {
+    SmartDynamicIntArray b { a };
+    b[0] = 20;
+    std::cout << "a = " << a << "\n";
+    std::cout << "b = " << b << "\n";
+  }
+
+  {
+    SmartDynamicIntArray b;
+    b = a;
+    b[0] = 30;
+    std::cout << "a = " << a << "\n";
+    std::cout << "b = " << b << "\n";
+  }
 
   return 0;
 }

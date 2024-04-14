@@ -14,7 +14,7 @@ DynamicIntArray::~DynamicIntArray() { delete[] m_data; }
 
 DynamicIntArray::DynamicIntArray(const DynamicIntArray& other)
   : m_size { other.m_size }
-  , m_data { other.m_size != 0 ? new int[other.m_size] : nullptr }
+  , m_data { other.m_size != 0 ? new int[other.m_size] {} : nullptr }
 {
   std::copy(other.m_data, other.m_data + other.m_size, m_data);
 }
