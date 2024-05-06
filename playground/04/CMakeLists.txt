@@ -1,0 +1,1 @@
+add_executable(playground_04 main.cpp)
