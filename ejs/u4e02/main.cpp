@@ -5,6 +5,9 @@
 #include <iostream>
 #include <vector>
 
+// funcion polimorfica
+// Una función que puede evaluarse o aplicarse a valores de diferentes tipos
+// se conoce como función polimórfica
 void imprimir(const Empleado& empleado)
 {
   std::cout << "nombre: " << empleado.get_nombre() << "\n"
