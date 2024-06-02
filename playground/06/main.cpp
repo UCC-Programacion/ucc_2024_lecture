@@ -2,6 +2,8 @@
 
 int main()
 {
+  menu::mostrar();
+
   // https://hackingcpp.com/cpp/lang/exceptions.html
 
   // while (true) {
@@ -30,5 +32,4 @@ int main()
   //     throw;
   //   }
   // }
-  menu::mostrar();
 }
